@@ -8,6 +8,8 @@ trait Billable {
     fn total(&self) -> f32;
 }
 
+trait BillableDisplay: Billable + Display {}
+
 #[derive(Debug, PartialEq, Clone)]
 struct ConsultingWork {
     what: String,
