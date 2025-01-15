@@ -1,0 +1,10 @@
+POST http://localhost:8080/pets
+Content-Type: application/json
+
+{
+    "name": "Fluffy",
+    "number_of_legs": 4
+}
+
+###
+GET http://localhost:8080/pets
